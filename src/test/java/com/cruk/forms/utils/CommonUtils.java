@@ -47,7 +47,7 @@ public abstract class CommonUtils {
         try {
             return driver.getTitle();
         } catch (Exception e) {
-            //throw new TestException(String.format("Current page title is: %s", driver.getTitle()));
+            throw new RuntimeException(String.format("Current page title is: %s", driver.getTitle()));
         }
     }
 
@@ -55,7 +55,7 @@ public abstract class CommonUtils {
         try {
             return driver.getCurrentUrl();
         } catch (Exception e) {
-            //throw new TestException(String.format("Current URL is: %s", driver.getCurrentUrl()));
+            throw new RuntimeException(String.format("Current URL is: %s", driver.getCurrentUrl()));
         }
     }
 
