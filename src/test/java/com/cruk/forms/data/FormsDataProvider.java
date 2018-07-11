@@ -4,6 +4,6 @@ import java.util.Map;
 
 public interface FormsDataProvider {
 
-	Map<String, String> getData();
+	Map<String, FormField> getData();
 
 }

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10027" started-at="2018-07-05T15:12:07Z" finished-at="2018-07-05T15:12:17Z">
+  <suite name="Default suite" duration-ms="12655" started-at="2018-07-10T21:41:04Z" finished-at="2018-07-10T21:41:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10027" started-at="2018-07-05T15:12:07Z" finished-at="2018-07-05T15:12:17Z">
+    <test name="Default test" duration-ms="12655" started-at="2018-07-10T21:41:04Z" finished-at="2018-07-10T21:41:17Z">
       <class name="com.cruk.forms.tests.SspValidFormSubmission">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cruk.forms.tests.SspValidFormSubmission@26be92ad]" name="setUp" is-config="true" duration-ms="2986" started-at="2018-07-05T16:12:07Z" finished-at="2018-07-05T16:12:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cruk.forms.tests.SspValidFormSubmission@6eebc39e]" name="setUp" is-config="true" duration-ms="3256" started-at="2018-07-10T21:41:04Z" finished-at="2018-07-10T21:41:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ssp_fillInYourDetailsPage()[pri:0, instance:com.cruk.forms.tests.SspValidFormSubmission@26be92ad]" name="ssp_fillInYourDetailsPage" duration-ms="6979" started-at="2018-07-05T16:12:10Z" finished-at="2018-07-05T16:12:17Z">
+        <test-method status="PASS" signature="ssp_fillInYourDetailsPage()[pri:0, instance:com.cruk.forms.tests.SspValidFormSubmission@6eebc39e]" name="ssp_fillInYourDetailsPage" duration-ms="9359" started-at="2018-07-10T21:41:08Z" finished-at="2018-07-10T21:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ssp_fillInYourDetailsPage -->

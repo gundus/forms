@@ -8,12 +8,13 @@ public class InMemoryDataProvider implements FormsDataProvider {
 	/* (non-Javadoc)
 	 * @see com.cruk.forms.data.DataProvider#getData()
 	 */
-	@Override
-	public Map<String, String> getData() {
+	
+	//@Override
+	public Map<String, FormField> getData() {
 
-		Map<String, String> fieldValueMapping = new HashMap<>();
-		fieldValueMapping.put("edit-submitted-event-form-fname", "firstName");
-		fieldValueMapping.put("edit-submitted-event-form-sname", "lastName");
+		Map<String, FormField> fieldValueMapping = new HashMap<>();
+		fieldValueMapping.put("edit-submitted-event-form-fname", new FormField("fname","giri","text"));
+		fieldValueMapping.put("edit-submitted-event-form-sname", new FormField("sname","laksh","text"));
 
 		return fieldValueMapping;
 

@@ -8,12 +8,6 @@ import com.cruk.forms.utils.CommonUtils;
 
 public class YourDetailsPage extends CommonUtils {
 
-	private final By EVENTLOV = By.id("edit-submitted-event-form-event-code");
-	private final By CONFIRMPLACE = By.id("edit-submitted-event-form-confirmed-place-1");
-	private final By TITLE = By.id("edit-submitted-event-form-title");
-	private final By FSTNAME = By.id("edit-submitted-event-form-fname");
-	private final By SURNAME = By.id("edit-submitted-event-form-sname");
-
 	public YourDetailsPage() {
 	}
 
@@ -32,6 +26,7 @@ public class YourDetailsPage extends CommonUtils {
 		return this;
 	}
 
+	
 	//public YourDetailsPage selectFromListOfValue(String id, String value) {
 
 	}

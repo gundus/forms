@@ -13,7 +13,7 @@ public static WebDriver driver;
 
 @BeforeSuite(alwaysRun = true)
 public void setup() {
-	System.setProperty("webdriver.chrome.driver", "C:\\unsubme\\src\\test\\java\\com\\bigmantra\\unsubme\\resources\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "\\src\\test\\java\\com\\cruk\\forms\\resources\\chromedriver.exe");
 	driver = new ChromeDriver();
 	}
 
