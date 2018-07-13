@@ -15,6 +15,8 @@ public class InMemoryDataProvider implements FormsDataProvider {
 		Map<String, FormField> fieldValueMapping = new HashMap<>();
 		fieldValueMapping.put("edit-submitted-event-form-fname", new FormField("fname","giri","text"));
 		fieldValueMapping.put("edit-submitted-event-form-sname", new FormField("sname","laksh","text"));
+		fieldValueMapping.put("edit-submitted-event-form-title", new FormField("title","Mr","lov"));
+
 
 		return fieldValueMapping;
 

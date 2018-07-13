@@ -59,6 +59,7 @@ public abstract class CommonUtils {
         }
     }
 
+    
     public WebElement getElement(By selector) {
         try {
             return driver.findElement(selector);

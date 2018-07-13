@@ -14,22 +14,22 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class FileDataProvider implements FormsDataProvider {
 
 	@Override
-	public Map<String, String> getData() {
+	public Map<String, FormField> getData() {
 
-		Map<String, String> fieldValueMapping = new HashMap<>();
+		Map<String, FormField> fieldValueMapping = new HashMap<>();
 		try {
-			FileInputStream file = new FileInputStream(
-					new File("src/test/resources/Datasheet.xlsx"));
+			FileInputStream file = new FileInputStream(new File("src/test/resources/Datasheet.xlsx"));
 			Workbook workbook = new XSSFWorkbook(file);
 			Sheet sheet = workbook.getSheetAt(0);
 			Iterator<Row> rowIterator = sheet.iterator();
-
+			
 			while (rowIterator.hasNext()) {
+				
 				Row row = rowIterator.next();
-				fieldValueMapping.put(row.getCell(0).toString(), row.getCell(1).toString());
+				fieldValueMapping.put(row.getCell(0).toString(),
+						new FormField(row.getCell(1).toString(), row.getCell(2).toString(), row.getCell(3).toString()));
 			}
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 		return fieldValueMapping;

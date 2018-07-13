@@ -26,7 +26,4 @@ public class YourDetailsPage extends CommonUtils {
 		return this;
 	}
 
-	
-	//public YourDetailsPage selectFromListOfValue(String id, String value) {
-
-	}
+}
